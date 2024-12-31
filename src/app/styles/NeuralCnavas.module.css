@@ -1,0 +1,25 @@
+.canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.95;
+  }
+  
+  :global(a) {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+  }
+  
+  :global(a:hover) {
+    color: rgb(160, 160, 255);
+  }
+  
+  :global(a:active) {
+    color: rgb(160, 255, 255);
+  }
