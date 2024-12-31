@@ -2,7 +2,6 @@
 
 import React from 'react'
 import SlideToUnlock from '../components/SlideToUnlock'
-import { useRouter } from 'next/navigation'
 import localFont from 'next/font/local'
 import NeuralCanvas from '../components/NeuralCanvas'
 
@@ -13,10 +12,9 @@ const experimentalFont = localFont({
 
 
 export default function Home() {
-  const router = useRouter();
 
   const handleUnlockTask = (taskNumber: number) => {
-    router.push(`task${taskNumber}`)
+    window.open(`task${taskNumber}`, '_blank');
   }
 
   const openDoc = (link: string) => {
